@@ -1,4 +1,6 @@
 # backend gemini clone
+
+
 <h2>required :>>>></h2>
 <pre>
 npm init
@@ -10,3 +12,6 @@ npm i express
 npm install cors
 npm  i body-parser
 </pre>
+<p>
+to run backend --> node index.js
+</p>
