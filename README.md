@@ -1,3 +1,19 @@
+# gemini clone 
+
+<p>
+This is basically a text generation AI.
+</p>
+<ul>
+<li>it use google generative-ai .</li>
+<li>it use ai model >> gemini-1.5-flash << </li>
+</ul>
+
+# Frontend gemini clone
+
+
+
+
+
 # backend gemini clone
 
 
