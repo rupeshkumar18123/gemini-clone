@@ -19,9 +19,9 @@ app.get("/test",(req,res)=>{
 //generate promt answer using googel api
 let answer = '';
 
-app.get("/promt",async (req,resp)=>{
-//    const {userpromt} = req.body;
-   answer = await run("what is ai");
+app.post("/promt",async (req,resp)=>{
+   const {userpromt} = req.body;
+   answer = await run(userpromt);
    resp.status(200).send({answer});
    console.log(answer);
 });
