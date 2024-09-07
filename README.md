@@ -1,4 +1,4 @@
-# gemini clone 
+# Gemini clone 
 
 <p>
 This is basically a text generation AI.
@@ -10,7 +10,7 @@ This is basically a text generation AI.
 
 # Frontend gemini clone
 
-
+npm install axios
 
 
 
