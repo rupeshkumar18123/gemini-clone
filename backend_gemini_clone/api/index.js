@@ -20,8 +20,8 @@ app.get("/test",(req,res)=>{
 let answer = '';
 
 app.post("/promt",async (req,resp)=>{
-   const {userpromt} = req.body;
-   answer = await run(userpromt);
+//    const {userpromt} = req.body;
+   answer = await run("what is ai");
    resp.status(200).send({answer});
    console.log(answer);
 });
