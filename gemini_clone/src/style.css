@@ -54,7 +54,7 @@
 }
 
 .main_div {
-  height: 95vh;
+  height: 85vh;
   width: 95vw;
   border-radius: 20px;
   background:    #C197D2 ;
@@ -64,4 +64,27 @@
 
   align-items: center;
   box-shadow: 10px 10px 17px #bebebe, -10px -10px 17px #ffffff;
+}
+
+/* @font-face {
+  font-family: "Mokoto Glitch";
+  src: url("./assets/Mokoto/Glitch.ttf") format("ttf");
+ 
+}
+.heading{
+  font-weight: bolder;
+  color: #5d1919;
+  font-family: "Mokoto Glitch", sans-serif;
+ 
+} */
+
+@font-face {
+  font-family: "Mokoto Glitch";
+  src: url("./assets/MG.ttf") format("truetype");
+}
+
+.heading {
+  font-weight: bolder;
+  color: #613659;
+  font-family: "Mokoto Glitch", sans-serif;
 }

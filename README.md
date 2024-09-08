@@ -15,7 +15,7 @@ npm install axios
 
 
 # backend gemini clone
-
+backend is not setup properly on vercel..................have to debug for deployment of backend
 
 <h2>required :>>>></h2>
 <pre>

@@ -1,5 +1,6 @@
 
 const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
@@ -7,7 +8,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 // Access your API key as an environment variable.
 const genAI = new GoogleGenerativeAI("AIzaSyB76L5mvSDPmG6W5pAFC5s5B-b49oVpucY");
 
-const app = express();
+
 
 app.use(bodyParser.json());
 app.use(cors());

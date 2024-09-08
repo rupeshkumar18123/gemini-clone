@@ -1,6 +1,8 @@
 import React from "react";
 import "../style.css";
 import PromptBar from "./PromptBar";
+
+
 function MainDiv() {
   return (
     <div className="main_div">
