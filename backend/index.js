@@ -13,7 +13,10 @@ const genAI = new GoogleGenerativeAI(gemini_api);
 
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: ["https://gemini-clone-two-vert.vercel.app", "http://localhost:5173"] // Replace with the domains you want to allow
+}));
+
 
 app.get("/",(req,res)=>{
     res.send("gemini api is working fine...!!!");
