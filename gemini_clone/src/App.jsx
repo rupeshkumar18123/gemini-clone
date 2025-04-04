@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import MainDiv from "./component/MainDiv";
-import "./app.css"
+import "./App.css"
 import Head from "./component/Head";
 
 function App() {
