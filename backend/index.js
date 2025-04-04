@@ -15,7 +15,7 @@ const genAI = new GoogleGenerativeAI(gemini_api);
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/test",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("gemini api is working fine...!!!");
 });
 
