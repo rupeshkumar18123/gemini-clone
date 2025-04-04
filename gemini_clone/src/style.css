@@ -4,8 +4,11 @@
   background-color: #613659;
   border: solid rgb(14, 13, 13) 2px;
   border-radius: 50px;
-  justify-content: center;
+  justify-content: left;
   padding: 2px;
+  position: relative;
+  z-index: 2;
+
 }
 .promt_text {
   border: none;
@@ -13,9 +16,10 @@
   position: relative;
   border-top-left-radius: 50vb;
   border-bottom-left-radius: 50vb;
-  text-align: center;
+  text-align: left;
   font-size: medium;
   font-weight: 400;
+  
   color: #211522;
 }
 .promt_btn {
@@ -41,7 +45,7 @@
   width: 80vw;
 }
 .main_div_p1{
-    height: 90%;
+    height: auto;
     width: 95%;
     margin: auto;
     border-radius: 20px;
@@ -49,13 +53,24 @@
 
    
 }
+
+.main_div_p1::-webkit-scrollbar {
+  width: 8px;
+  padding: 10px;
+}
+
+.main_div_p1::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
 .main_div_p2{
     margin: auto;
    
 }
 
 .main_div {
-  height: 85vh;
+  height: auto;
   width: 95vw;
   border-radius: 20px;
   background:    #C197D2 ;
