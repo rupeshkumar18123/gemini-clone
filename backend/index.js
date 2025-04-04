@@ -25,12 +25,30 @@ app.get("/",(req,res)=>{
 //generate promt answer using googel api
 let answer = '';
 
-app.get("/promt",async (req,resp)=>{
-   const {userpromt} = req.body;
-   answer = await run(userpromt);
-   resp.status(200).send({answer});
-//    console.log(answer);
-});
+// app.get("/promt",async (req,resp)=>{
+//    const {userpromt} = req.body;
+//    answer = await run(userpromt);
+//    resp.status(200).send({answer});
+// //    console.log(answer);
+// });
+
+
+app.get("/promt", async (req, res) => {
+    const { userpromt } = req.query;
+  
+    if (!userpromt) {
+      return res.status(400).send({ error: "Prompt is required" });
+    }
+  
+    try {
+      const answer = await run(userpromt);
+      res.status(200).send({ answer });
+    } catch (error) {
+      console.error("Gemini API error:", error.message);
+      res.status(500).send("Something went wrong with the Gemini API.");
+    }
+  });
+  
 
 //configuring promt answer
 const generationConfig = {
